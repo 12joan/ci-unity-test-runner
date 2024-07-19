@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# libpulse0 required for FMOD
+apt-get -q install -y --no-install-recommends --allow-downgrades libpulse0
+
 # Ensure machine ID is randomized for personal license activation
 if [[ "$UNITY_SERIAL" = F* ]]; then
   echo "Randomizing machine ID for personal license activation"
