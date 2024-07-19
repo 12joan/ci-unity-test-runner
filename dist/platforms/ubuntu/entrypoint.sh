@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # libpulse-dev required for FMOD
-apt-get -q install -y --no-install-recommends --allow-downgrades libpulse-dev
+apt-get update
+apt-get install -y libpulse-dev
 
 # Ensure machine ID is randomized for personal license activation
 if [[ "$UNITY_SERIAL" = F* ]]; then
