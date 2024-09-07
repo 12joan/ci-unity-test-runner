@@ -209,6 +209,9 @@ for platform in ${TEST_PLATFORMS//;/ }; do
     -coverageOptions "$COVERAGE_OPTIONS" \
     $CUSTOM_PARAMETERS
 
+  echo "FILE LIST HERE"
+  find $UNITY_PROJECT_PATH
+
   # Catch exit code
   TEST_EXIT_CODE=$?
 
